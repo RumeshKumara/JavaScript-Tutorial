@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div>
-        <h1>Cart Quantity</h1>
-        <button id="showQuantity">Show Quantity</button>
-        <button id="addToCart">Add to Cart</button>
-        <button id="addTwo">+2</button>
-        <button id="addThree">+3</button>
-        <button id="resetCart">Reset Cart</button>
+      <h1>Cart Quantity</h1>
+      <button id="showQuantity">Show Quantity</button>
+      <button id="addToCart">Add to Cart</button>
+      <button id="addTwo">+2</button>
+      <button id="addThree">+3</button>
+      <button id="resetCart">Reset Cart</button>
     </div>
     <script>
-        let cartQuantity = 0;
+      let cartQuantity = 0;
 
-        document.getElementById('showQuantity').addEventListener('click', () => {
-            console.log(`Cart Quantity: ${cartQuantity}`);
-        });
+      document.getElementById("showQuantity").addEventListener("click", () => {
+        console.log(`Cart Quantity: ${cartQuantity}`);
+      });
 
-        document.getElementById('addToCart').addEventListener('click', () => {
-            cartQuantity += 1;
-            console.log(`Cart Quantity: ${cartQuantity}`);
-        });
+      document.getElementById("addToCart").addEventListener("click", () => {
+        cartQuantity += 1;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+      });
 
-        document.getElementById('addTwo').addEventListener('click', () => {
-            cartQuantity += 2;
-            console.log(`Cart Quantity: ${cartQuantity}`);
-        });
+      document.getElementById("addTwo").addEventListener("click", () => {
+        cartQuantity += 2;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+      });
 
-        document.getElementById('addThree').addEventListener('click', () => {
-            cartQuantity += 3;
-            console.log(`Cart Quantity: ${cartQuantity}`);
-        });
+      document.getElementById("addThree").addEventListener("click", () => {
+        cartQuantity += 3;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+      });
 
-        document.getElementById('resetCart').addEventListener('click', () => {
-            cartQuantity = 0;
+      document.getElementById("resetCart").addEventListener("click", () => {
+        cartQuantity = 0;
 
-            alert('Cart has been reset.'); // Display alert for confirmation
-            console.log(`Cart Quantity: ${cartQuantity}`);
-        });
-        // Example usage:
+        alert("Cart has been reset."); // Display alert for confirmation
+        console.log(`Cart Quantity: ${cartQuantity}`);
+      });
+      // Example usage:
     </script>
-</body>
+  </body>
 </html>

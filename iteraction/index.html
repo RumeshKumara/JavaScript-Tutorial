@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      const evenNumbers = number.filter((num) => num % 2 === 0);
+      const oddNumbers = number.filter((num) => num % 2 !== 0);
+      const evenNumbersSquared = evenNumbers.map((num) => num * num);
+      const oddNumbersCubed = oddNumbers.map((num) => num * num * num);
+      const evenNumbersSum = evenNumbers.reduce((acc, num) => acc + num, 0);
+      const oddNumbersSum = oddNumbers.reduce((acc, num) => acc + num, 0);
+      const evenNumbersProduct = evenNumbers.reduce((acc, num) => acc * num, 1);
+
+      console.log("Even Numbers: ", evenNumbers);
+      console.log("Odd Numbers: ", oddNumbers);
+      console.log("Even Numbers Squared: ", evenNumbersSquared);
+      console.log("Odd Numbers Cubed: ", oddNumbersCubed);
+      console.log("Sum of Even Numbers: ", evenNumbersSum);
+      console.log("Sum of Odd Numbers: ", oddNumbersSum);
+      console.log("Product of Even Numbers: ", evenNumbersProduct);
+    </script>
+  </body>
+</html>
